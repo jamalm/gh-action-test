@@ -1,0 +1,18 @@
+# name of the workflow
+name: First Workflow
+# event trigger
+on: workflow_dispatch
+# jobs container
+jobs:
+  # this can be called anything!
+  first-job:
+    # specify the runner here
+    runs-on: ubuntu-latest
+    # job steps container
+    steps:
+      # name of step
+      - name: Print greeting
+        # script or action
+        run: echo "hello world!"
+      - name: Print Goodbye
+        run: echo "Complete!"
